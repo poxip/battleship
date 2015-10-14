@@ -44,7 +44,9 @@ def game():
             board[guess_row][guess_col] = "X"
             print_board(board)
     else:
-        print "Game over! Ship was on row %s" %guess_row, "and col %s" % guess_col
+        print "Game over! Ship was on row %s" %ship_row, "and col %s" % ship_col
+        board[ship_row -1][ship_col -1] = "="
+        print_board(board)
         new_game = raw_input("Do you want to play again? y/n\n")
         if new_game == "yes" or new_game == "y":
             game()
