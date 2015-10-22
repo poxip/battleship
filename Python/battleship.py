@@ -21,6 +21,8 @@ def game():
 
     ship_row = random_row(board)
     ship_col = random_col(board)
+    ship_row_guess = ship_row -1
+    ship_col_guess = ship_col -1
 
     count = 0
     warning = "Hey, that's not the number. Game over."
@@ -55,7 +57,8 @@ def game():
         guess_row -= 1
         guess_col -= 1
         count += 1
-        if guess_row == ship_row and guess_col == ship_col:
+
+        if guess_row == ship_row_guess and guess_col == ship_col_guess:
             print congratulations
             print_board(board)
             new_game = raw_input(again)
