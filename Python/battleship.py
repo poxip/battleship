@@ -14,10 +14,10 @@ def game():
     print_board(board)
 
     def random_row(board):
-        return randint(0, len(board))
+        return randint(1, len(board))
 
     def random_col(board):
-        return randint(0, len(board[0]))
+        return randint(1, len(board[0]))
 
     ship_row = random_row(board)
     ship_col = random_col(board)
@@ -25,6 +25,12 @@ def game():
     ship_col_guess = ship_col -1
 
     count = 0
+
+    print ship_row
+    print ship_col
+    print ship_row_guess
+    print ship_col_guess
+
     warning = "Hey, that's not the number. Game over."
     again = "Do you want to play again? y/n\n"
     congratulations = "Congratulations! You sunk my battleship!"
@@ -60,12 +66,14 @@ def game():
 
         if guess_row == ship_row_guess and guess_col == ship_col_guess:
             print congratulations
+            board[guess_row][guess_col] = "="
             print_board(board)
             new_game = raw_input(again)
             if new_game == "yes" or new_game == "y":
                 game()
-            else:
+            elif new_game == "no" or new_game == "n":
                 print farewell
+                break
         elif guess_row >= 5 or guess_col >= 5:
             print not_area
         elif (board[guess_row][guess_col] == "X"):
