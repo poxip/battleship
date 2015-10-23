@@ -26,11 +26,6 @@ def game():
 
     count = 0
 
-    print ship_row
-    print ship_col
-    print ship_row_guess
-    print ship_col_guess
-
     warning = "Hey, that's not the number. Game over."
     again = "Do you want to play again? y/n\n"
     congratulations = "Congratulations! You sunk my battleship!"
