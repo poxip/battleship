@@ -45,7 +45,7 @@ def game():
         else:
             guess_row = int(guess_row)
 
-        guess_col = int(raw_input("Guess Col:"))
+        guess_col = raw_input("Guess Col:")
         try:
             int(guess_col)
         except ValueError:
