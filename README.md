@@ -2,7 +2,7 @@
 Simple one player battleship game in Python.
 Developing this game to increase my Python beginner skill.
 
-Run by command python /Python/battleship.pt
+Run by command python /Python/battleship.py
 
 #Rules
 You have to guess position of 1x1 ship.
