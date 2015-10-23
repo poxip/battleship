@@ -4,4 +4,6 @@ Simple one player battleship game in Python to learn language.
 Run:
 python battleship.py
 
-Developing this game to increase my Python skill while learning it.
+Developing this game to increase my Python beginner skill.
+
+<img src="http://i.imgur.com/KsTPM6F.png">
