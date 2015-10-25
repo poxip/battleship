@@ -3,16 +3,12 @@ from random import randint
 
 def game():
     board = []
-
     for x in range(5):
         board.append(["O"] * 5)
 
     def print_board(board):
         for row in board:
             print " ".join(row)
-
-    print "Let's play Battleship!"
-    print_board(board)
 
     def random_row(board):
         return randint(1, len(board))
@@ -23,14 +19,17 @@ def game():
     def random_row_col():
         return randint(1, 2)
 
+    def counter(count):
+        print "You tried: %s of 5 times" % count
+
     row_col = random_row_col()
     ship_row = random_row(board)
     ship_col = random_col(board)
     ship_row_guess = ship_row - 1
     ship_col_guess = ship_col - 1
-
     count = 0
-
+    show_row = 0
+    show_col = 0
     warning = "Hey, that's not the number. Game over."
     again = "Do you want to play again? y/n\n"
     congratulations = "Congratulations! You sunk my battleship!"
@@ -40,12 +39,11 @@ def game():
     farewell = "Bye!"
     tip = "So you can't find the ship? It's on.."
 
+    print "Let's play Battleship!"
+    print_board(board)
+
     while count <= 5:
-
-        show_row = 0
-        show_col = 0
-
-        print "You tried: %s of 5 times" % count
+        counter(count)
         if count == 4:
             print tip
             if row_col == 1:
