@@ -33,8 +33,8 @@ def game():
     warning = "Hey, that's not the number. Game over."
     again = "Do you want to play again? y/n\n"
     congratulations = "Congratulations! You sunk my battleship!"
-    not_area = "Hey, that's not even on battle area!"
-    already_shot = "You was shooting here already!"
+    not_area = "Hey, that's not even on the battle area!"
+    already_shot = "You've already shot here!"
     miss = "You missed my battleship!"
     farewell = "Bye!"
     tip = "So you can't find the ship? It's on.."
@@ -105,7 +105,7 @@ def game():
             print_board(board)
 
     else:
-        print "Game over! Ship was on row %s" % ship_row, "and col %s" % ship_col
+        print "Game over! The ship was on row %s" % ship_row, "and col %s" % ship_col
         board[ship_row - 1][ship_col - 1] = "="
         print_board(board)
         new_game = raw_input(again)
