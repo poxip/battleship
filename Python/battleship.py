@@ -41,7 +41,8 @@ def game():
 
     print "Let's play Battleship!"
     print_board(board)
-
+    #todo change to function
+    #add classes / more ships
     while count <= 5:
         counter(count)
         if count == 4:
