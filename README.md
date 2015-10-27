@@ -13,3 +13,9 @@ In 4-th round you earn tip (col or row, it's random.)
 #Screenshotes
 <img src="http://i.imgur.com/NUY6nLl.png">
 <img src="http://i.imgur.com/KsTPM6F.png">
+
+#ToDo
+- two player mode
+- many ships
+- bigger ships
+- online player vs player
