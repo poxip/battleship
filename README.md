@@ -15,3 +15,12 @@ python /Python/battleshit.py
 # Screenshots
 ![Screenshot 1](http://i.imgur.com/NUY6nLl.png)
 ![Screenshot 2](http://i.imgur.com/KsTPM6F.png)
+
+# Todo
+- two players mode
+- multiple ships
+- larger ships
+- online player vs player
+- improve code to use classes (OOP)
+- file export/import
+- UI
