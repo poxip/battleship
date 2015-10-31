@@ -1,24 +1,17 @@
 # Battleship game (one player)
-Simple one player battleship game in Python.
-Developing this game to increase my Python beginner skill.
+Simple one player battleship game written in Python.
+Developing this game to increase my Python skill.
 
-Run by command python /Python/battleship.pt
+To run:
+```
+python /Python/battleshit.py
+```
 
-#Rules
-You have to guess position of 1x1 ship.
-Guessing row (1-5) and col (1-5).
-You have 6 chances to guess.
-In 4-th round you earn tip (col or row, it's random.)
+# Rules
+* You have to guess the position of a 1x1 ship: row (1-5) and col (1-5).
+* You have only 6 chances.
+* In 4th round you earn tip (col or row, it's random.)
 
-#Screenshotes
-<img src="http://i.imgur.com/NUY6nLl.png">
-<img src="http://i.imgur.com/KsTPM6F.png">
-
-#ToDo
-- two player mode
-- many ships
-- bigger ships
-- online player vs player
-- change code do classes and functiones
-- file export/import
-- UI 
+# Screenshots
+![Screenshot 1](http://i.imgur.com/NUY6nLl.png)
+![Screenshot 2](http://i.imgur.com/KsTPM6F.png)
