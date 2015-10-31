@@ -21,3 +21,4 @@ In 4-th round you earn tip (col or row, it's random.)
 - online player vs player
 - change code do classes and functiones
 - file export/import
+- UI 
